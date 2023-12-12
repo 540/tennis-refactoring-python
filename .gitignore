@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+**/*.pyc
+**/__pycache__
+.DS_Store
