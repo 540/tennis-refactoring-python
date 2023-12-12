@@ -13,6 +13,10 @@ setup: ## Setup local environment
 test:  ## Locally run unit tests
 	@PIPENV_VERBOSITY=-1 pipenv run pytest
 
+.PHONY: test-cov
+test-cov:  ## Locally run unit tests with test coverage
+	@PIPENV_VERBOSITY=-1 pipenv run pytest --cov
+
 .PHONY: test-watch
 test-watch:  ## Locally run unit tests in watch mode
 	@PIPENV_VERBOSITY=-1 pipenv run ptw
